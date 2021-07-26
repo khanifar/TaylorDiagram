@@ -1,7 +1,0 @@
-library(openair)
-Data <- read.table("../input/testdata/Test.csv", header = T, sep = ",")
-
-# png("taylorDiagram1.png", res=300)
-TaylorDiagram(Data ,obs = "obs", mod = "mod", group = "model",key.columns = 1,pch=seq(15,17),cex=1.6,par.settings=list(fontsize=list(text=18)))
-# dev.off()
-
